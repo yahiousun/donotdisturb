@@ -5,7 +5,13 @@
 
 ## Getting Started
 
-Download the [production version][min] or the [development version][max].
+Install with bower:
+
+```
+bower install --save jquery-donotdisturb
+```
+
+Or download the [production version][min] or the [development version][max].
 
 [min]: https://raw.githubusercontent.com/yahiousun/jquery-donotdisturb/master/dist/jquery.donotdisturb.min.js
 [max]: https://raw.githubusercontent.com/yahiousun/jquery-donotdisturb/master/dist/jquery.donotdisturb.js
@@ -39,6 +45,9 @@ $(Selector).donotdisturb();
 Name          | type          | default       | description
 ------------- | ------------- | ------------- | -------------
 selector      | string        | [data-irrelevant="donotdisturb"]  | irrelevant element selector
+scrollspy     | boolean       | true          | show/hide irrelevant element on scroll
+typingspy     | boolean       | true          | show/hide irrelevant element when typing
+
 
 ## License
 
