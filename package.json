@@ -1,9 +1,10 @@
 {
   "name": "donotdisturb",
   "version": "0.0.1",
-  "description": "donotdisturb",
+  "description": "jQuery.donotdisturb plugin",
   "keywords": [
-    "jquery-plugin"
+    "jquery-plugin",
+    "mobile"
   ],
   "author": {
     "name": "yahiousun",
