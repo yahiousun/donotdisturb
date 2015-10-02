@@ -47,8 +47,7 @@ Name          | type          | default       | description
 selector      | string        | [data-irrelevant="donotdisturb"]  | irrelevant element selector
 scrollspy     | boolean       | true          | show/hide irrelevant element <br>on scroll
 typingspy     | boolean       | true          | show/hide irrelevant element <br>when typing
-transition    | boolean or string | in          | use css3 transition,
-add a class to irrelevant element
+transition    | boolean or string | in          | use css3 transition, <br>add a class to irrelevant element
 
 
 ## License
