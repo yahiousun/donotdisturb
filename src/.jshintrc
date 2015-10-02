@@ -1,0 +1,22 @@
+{
+  "curly": true,
+  "eqeqeq": true,
+  "immed": true,
+  "latedef": true,
+  "newcap": true,
+  "noarg": true,
+  "sub": true,
+  "undef": true,
+  "unused": true,
+  "boss": true,
+  "eqnull": true,
+  "browser": true,
+  "predef": ["jQuery"],
+  "globals": {
+    "console": false,
+    "define": false
+  },
+  "expr": {
+    "Expected an assignment or function call and instead saw an expression.": true
+  }
+}

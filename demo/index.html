@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery.donotdisturb plugin demo</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Load local jQuery. -->
+    <script src="../bower_components/jquery/jquery.js"></script>
+    <!-- Load local jquery.support.css3. -->
+    <script src="../bower_components/jquerysupportcss3/dist/jquery.support.css3.js"></script>
+    <!-- Load local lib and tests. -->
+    <script src="../src/donotdisturb.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  </head>
+  <body data-spy="donotdisturb">
+    <input type="text" class="demo-input" placeholder="focus to active donotdisturb">
+    <div class="demo-footer fade" data-irrelevant="donotdisturb">
+        scroll to active donotdisturb
+    </div>
+  </body>
+</html>

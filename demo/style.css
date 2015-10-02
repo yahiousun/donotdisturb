@@ -1,0 +1,37 @@
+
+body {
+  -webkit-overflow-scrolling: touch;
+  height: 2000px;
+}
+.demo-input {
+  position: fixed;
+  bottom: 40%;
+  left: 0;
+  right: 0;
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+  margin: 0 auto;
+  font-size: 18px;
+  box-sizing: border-box;
+  -webkit-transform: translateZ(0);
+}
+.demo-footer {
+  padding: 10px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: #FFF;
+  font-size: 18px;
+  text-align: center;
+  background-color: #58B2DC;
+  -webkit-transform: translateZ(0);
+}
+.fade {
+  opacity: 0;
+  transition: opacity 0.25s linear;
+}
+.fade.in {
+  opacity: 1;
+}
