@@ -1,12 +1,12 @@
 {
   "name": "donotdisturb",
   "dependencies": {
-    "jquery": "~1.7",
+    "jquery": ">=1.7",
     "jquerysupportcss3": "jquery-support-css3#~0.0.1"
   },
   "devDependencies": {
     "qunit": "~1.12.0",
-    "jquery": "~1.7",
+    "jquery": ">=1.7",
     "jquery-support-css3": "~0.0.1"
   },
   "ignore": [
