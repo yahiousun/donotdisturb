@@ -22,7 +22,7 @@
     offset: 0,
     initialize: function () {
       var that = this;
-      if (!that.$element.length || !that.$irrelevant.length) {
+      if (!that.$element.length) {
         return;
       }
       if (that.options.transition === true) {
@@ -51,7 +51,11 @@
       if (!that.active) {
         return;
       }
-      that.$irrelevant.css('display', 'block');
+      that.$irrelevant = $(that.options.selector);
+      if (!that.$irrelevant.length) {
+        return;
+      }
+      that.$irrelevant.attr('aria-hidden', 'false').css('display', 'block');
       if (that.options.transition && $.support.transition) {
         that.$irrelevant[0].offsetWidth; // force reflow
         that.$irrelevant.off($.support.transition.end + '.donotdisturb').addClass(that.options.transition);
@@ -63,13 +67,17 @@
       if (that.active) {
         return;
       }
+      that.$irrelevant = $(that.options.selector);
+      if (!that.$irrelevant.length) {
+        return;
+      }
       if (that.options.transition && $.support.transition) {
         that.$irrelevant.one($.support.transition.end + '.donotdisturb', function () {
-          that.$irrelevant.css('display', 'none');
+          that.$irrelevant.attr('aria-hidden', 'true').css('display', 'none');
         });
         that.$irrelevant.removeClass(that.options.transition);
       } else {
-        that.$irrelevant.removeClass(that.options.transition).css('display', 'none');
+        that.$irrelevant.removeClass(that.options.transition).attr('aria-hidden', 'true').css('display', 'none');
       }
       that.active = true;
     },
