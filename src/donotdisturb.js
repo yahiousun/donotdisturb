@@ -11,7 +11,7 @@
   'use strict';
 
   var Donotdisturb = function (element, options) {
-    this.$element = $(element).is(document.body) ? $(window) : $(element);
+    this.$element = $(element).is(document.body) ? $(document) : $(element);
     this.$irrelevant = $(options.selector);
     this.options = options;
     this.initialize();

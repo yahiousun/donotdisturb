@@ -1,4 +1,4 @@
-/*! donotdisturb - v0.0.1 - 2015-10-03
+/*! donotdisturb - v0.0.1 - 2015-10-05
 * Copyright (c) 2015 yahiousun; Licensed MIT */
 ;(function (factory) {
   'use strict';
@@ -13,7 +13,7 @@
   'use strict';
 
   var Donotdisturb = function (element, options) {
-    this.$element = $(element).is(document.body) ? $(window) : $(element);
+    this.$element = $(element).is(document.body) ? $(document) : $(element);
     this.$irrelevant = $(options.selector);
     this.options = options;
     this.initialize();
